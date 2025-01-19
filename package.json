@@ -1,7 +1,7 @@
 {
   "name": "fastify-react-sample",
   "version": "1.0.0",
-  "description": "",
+  "description": "[Fastify](https://www.fastify.io/) を使って作ったWebアプリケーションのサンプルです。 お弁当注文アプリを模して作られています。",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -32,6 +32,7 @@
     "@fastify/session": "^10.1.0",
     "@fastify/static": "^6.7.0",
     "@fastify/view": "^7.3.0",
+    "codeceptjs": "^3.3.7",
     "connect-pg-simple": "^8.0.0",
     "dotenv": "^16.0.3",
     "ejs": "^3.1.8",
@@ -39,6 +40,7 @@
     "fastify-plugin": "^4.4.0",
     "passport-local": "^1.0.0",
     "pg": "^8.8.0",
+    "playwright": "^1.30.0",
     "postgrator": "^7.1.1"
   },
   "devDependencies": {

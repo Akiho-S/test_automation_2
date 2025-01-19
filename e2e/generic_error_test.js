@@ -1,11 +1,15 @@
-SuiteOf("一般的なエラーのテスト");
+Feature('スモークテスト');
 
-Scenario(
-  "ユーザーが存在しないURLにアクセスすると、エラーメッセージと商品一覧へのリンクが表示される",
-  ({ I }) => {
-    I.amOnPage("/undefined");
-    I.see("お探しのページは見つかりませんでした。");
-    I.click("商品一覧へ戻る");
-    I.seeInTitle("商品一覧");
-  }
-);
+Scenario("example.comにアクセスする", ({ I }) => {
+  I.amOnPage("https://example.com");
+  I.see("Example Domain");
+});
+
+// Scenario('Webサイトを開きログインする', ({ I }) => {
+//   I.amOnPage("/"); // BASE_URLからの相対パスに書き換える
+//   I.click("ログインする");
+//   I.fillField("ユーザー名", "user1");
+//   I.fillField("パスワード", "super-strong-passphrase");
+//   I.click("ログイン");
+//   I.see("user1 さん");
+// })
